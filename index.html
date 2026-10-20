@@ -19,7 +19,18 @@
         } 
         p { 
             text-align: justify;  
-        } 
+        }
+	.container {
+  display: flex;       /* Aligns the items side-by-side */
+  align-items: center; /* Centers the image and text vertically */
+  gap: 20px;          /* Adds space between the image and text */
+}
+
+.side-image {
+  max-width: 300px;   /* Prevents the image from being too large */
+  height: auto;        /* Keeps the image's original aspect ratio */
+}
+
     </style> 
 </head>
 <body>
@@ -36,11 +47,13 @@
   </tr>
  </table>
  <hr>
- <div class="square"><div>
- <!img src="mypic.jpg" style="width:225px;height:259px;">
-</div><p>I'm a postdoc in the <a href="https://www.math.utah.edu/" target="_blank">Department of Mathematics</a> at the University of Utah. I completed my PhD in December 2023 at the <a href="https://lsa.umich.edu/math/" target="_blank">Department of Mathematics</a>  
- at the University of Michigan where my advisor was <a href="http://www.math.lsa.umich.edu/~kesmith/" target="_blank">Karen Smith</a>. Before coming to Utah, I spent a semester at <a href="https://www.msri.org/programs/343" target="_blank">MSRI/SLMath</a>  participating in the Commutative Algebra program. </p>
- <p>   My research interests lie in commutative algebra and algebraic geometry. I am on the job market for positions beginning in Fall 2027.</p>
+ <div class="container">
+<img src="websitepic.jpg" class="side-image">
+ <p>I'm a postdoc in the <a href="https://www.math.utah.edu/" target="_blank">Department of Mathematics</a> at the University of Utah. I completed my PhD in December 2023 at the <a href="https://lsa.umich.edu/math/" target="_blank">Department of Mathematics</a>  
+ at the University of Michigan where my advisor was <a href="http://www.math.lsa.umich.edu/~kesmith/" target="_blank">Karen Smith</a>. Before coming to Utah, I spent a semester at <a href="https://www.msri.org/programs/343" target="_blank">MSRI/SLMath</a>  participating in the Commutative Algebra program. <br> <br>
+  My research interests lie in commutative algebra and algebraic geometry. <br> <br>
+	I am on the job market for positions beginning in Fall 2027.</p>
+</div>
 <h3>  Contact information</h3>
 <table style="width=10%">
 	<tr>
